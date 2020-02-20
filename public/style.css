@@ -62,7 +62,7 @@ body {
 .card{
   background-color: #fff;
   width: 800px;
-  height: 400px;
+  min-height: 400px;
   margin: 45px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,4 +78,84 @@ body {
   to{
     opacity: 1;
   }
+}
+
+/* Details */
+
+.details{
+  padding: 32px;
+}
+
+.details .item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+.details .item:last-child{
+  border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1){
+  color: #777;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  font-weight: normal;
+}
+
+.details .item div:nth-child(2){
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details h3{
+  color: #7159c1;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.details .item span{
+  padding: 8px 16px;
+  background-color: #f0ff1df6;
+  border-radius: 16px;
+  color: #666;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* Form */
+
+.card input{
+  width: 100%;
+  outline: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card input[type="radio"]{
+  width: initial;
+  margin-right: 4px;
+}
+
+.card input::placeholder{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.card button[type="submit"]{
+  padding: 8px 32px;
+  background-color: #7159c1;
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
